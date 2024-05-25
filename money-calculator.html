@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Money Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="money-calculator.js"></script>
+  </head>
+  <body>
+
+    <div id="header"></div>
+    <div id="calculator-outer">
+      <div id="calculator-instructions">
+        <h1>Find your income to expenditures ratio</h1>
+        <p>Sometimes, it can be hard to picture where your money is going. This calculator will help you visualize the your income and costs, and help you visualize your spending habits.<br>To use this calculator, type in your incomes and expenditures into the following chart (type a negative sign for an expenditure like a subscription, i.e. if you are losing money). The pie chart at the bottom of the page will help you visualize how much money you are spending. If it is more than half red, your system is not sustainable!</p>
+      </div>
+      <form onSubmit="return false" id="form"><table id="calculator-table">
+        <!--
+        <tr><th colspan=3 id=title>Money Calculator</th></tr>
+        -->
+        <tr>
+          <td>Name</td>
+          <td>Amount ($)</td>
+          <td id= "description">Description</td>
+        </tr>
+      </table></form>
+
+      <div id="calculator-buttons-container">
+        <button onclick="addRow()" id="add-button" class="calculator-button">Add Row</button>
+        <button onclick="deleteRow()" id="delete-button" class="calculator-button">Delete Row</button>
+      </div>
+      
+      <script>generateTable();addRow();</script>
+
+      <div id="pie-container">
+        <svg id="pie" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"></svg>
+      </div>
+      
+      <script>
+        $("pie").innerHTML = generatePieChart(earnings);
+        setHeader();
+      </script>
+      
+    </div>
+    
+    <div class="credits">
+      <p>Website created by Bernard Jia, Charlie Jackson, & Malcolm Jackson (The Operation Aggregation) for the 2024 CKSS HTML/CSS Hackathon</p>
+    </div>
+  </body>
+</html>

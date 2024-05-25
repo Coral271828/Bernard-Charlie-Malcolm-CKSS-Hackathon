@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+  --red: #f1592a;
+  --yellow: #fec844;
+  --green: #32b14a;
+  --blue: #4a9195;
+  --off-white: #e1dfc6;
+  --whiter: #efeee1;
+  --dark-cyan: #3c5152;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+body {
+  background-color: var(--off-white);
+  color: black;
+  font-family: "Oxygen", sans-serif;
+  font-size: 20px;
+  padding-bottom: 100px;
+}
+
+a {
+  text-decoration: none;
+  color: #186334;
+  font-weight: 700;
+}
+
+a:hover{
+  color: var(--blue);
+  font-weight: 600;
+}
+
+#header {  
+  width: max(calc(100% + 16px), 1100px);
+  height: 180px;
+  
+  margin: -24px 0 0 -8px;
+  background: var(--whiter);
+  box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.2);
+}
+
+#header-inner {
+  margin: 20px 40px 20px 40px;
+  
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#title {
+  
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 3.75rem;
+  width: 30%;
+  margin: 10px 0 0 20px;
+}
+
+#title1 {
+  color: var(--green)
+}
+
+#title2 {
+  color: var(--red)
+}
+
+.deco {
+  margin-top:-1px;
+  grid-row: 1;
+  height: 10px;
+  width: 25%;
+}
+
+#deco {
+  display: flex;
+  height: 10px;
+}
+
+#deco1 {
+  background-color: var(--red);
+}
+
+#deco2 {
+  background-color: var(--yellow);
+}
+
+#deco3 {
+  background-color: var(--green);
+}
+
+#deco4 {
+  background-color: var(--blue);
+}
+
+#page-links {
+  text-align: center;
+  margin-left: 2%;
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  width: 60%;
+}
+
+.link {
+  font-family: "Oxygen", sans-serif;
+  font-weight: 500;
+  font-size: 25px;
+  height: 100%;
+  width: calc(100%/3);
+  margin-top: 120px;
+}
+
+#rainbow-label {
+  margin-left: 5%;
+}
+
+#switch {
+  width: 40px;
+  height: 20px;
+  border-radius: 99999px;
+  border: solid black;
+  position: relative;
+}
+#circle {
+  background-color: #ff0000;
+  border: solid #000000;
+  position: relative;
+  left: -45px;
+  width: 20px;
+  height: 20px;
+  border-radius: 99999px;
+}
+
+#welcome {
+  width: 90%;
+  margin: auto;
+  margin-top: 80px;
+  display: grid;
+}
+
+#welcome p {
+  grid-row: 1;
+}
+
+#welcome-text {
+  grid-row: 1;
+  background-color: var(--whiter);
+  padding: 15px;
+  margin-right: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  height: auto;
+}
+
+#welcome-text p {
+  margin: 30px 0px 0px 15px;
+}
+
+#welcome-image {
+  grid-row: 1;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+#calculator-outer {
+  width: 80%;
+  margin: auto;
+  margin-top: 80px;
+}
+
+#calculator-instructions {
+  padding: 10px 20px 20px 20px;
+  margin-top: 100px;
+  background: var(--whiter);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+#form {
+  width: 100%;
+}
+
+#calculator-table {
+  border-collapse: collapse;
+  margin: auto;
+  margin-top: 46px;
+  width: 70%;
+}
+
+td, th {
+  border: solid var(--dark-cyan);
+  height: 60px;
+  padding-left: 10px;
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+
+#description {
+  width: 50%
+}
+
+#pie-container {
+  width: 40%;
+  margin: auto;
+}
+.pie-text {
+  font: 6px "Oxygen";
+  text-anchor: middle;
+  fill: #fff;
+}
+
+input {
+  background-color: #00000000;
+  font-family: "Oxygen", sans-serif;
+  border: none;
+  padding-top: 0;
+  margin-top: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 24px;
+}
+input:focus {
+  outline: none;
+}
+
+#rainbow {
+  width: 250px;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+h2, h3, p {
+  margin-left: 20px;
+}
+
+#calculator-buttons-container {
+  margin: auto;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+}
+
+.calculator-button {
+  width: 100%;
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 20px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+#add-button {
+  background-color: var(--green);
+  margin-right: 20px;
+}
+
+#delete-button {
+  background-color: var(--red);
+  margin-left: 20px;
+}
+
+.info {
+  margin: 20px 0px 20px 50px;
+  padding: 30px 20px 20px 20px;
+  background: var(--whiter);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  width: 80%;
+  height: auto;
+}
+
+#info-title {
+  width: 20%;
+  margin: 80px 0 0 80px;
+}
+
+.credits {
+  font-family: "Space Mono", monospace;
+  font-size: 12px;
+  width: 100%;
+  text-align: center;
+  margin-top: 70px;
+}
